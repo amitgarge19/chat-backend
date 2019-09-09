@@ -1,0 +1,7 @@
+{
+    "name": "Chat Backend",
+    "version":"0.0.1",
+    "description": "Documentation for the chat application (back-end)",
+    "title": "Chat Back-End APIs",
+    "url": "http://localhost:3000"
+}
