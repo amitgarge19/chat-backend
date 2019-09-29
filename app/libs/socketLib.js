@@ -75,6 +75,7 @@ let setServer = (server) => {
                     // let userObj = {userId:currentUser.userId,fullName:fullName}
                     // allOnlineUsers.push(userObj)
                     // console.log(allOnlineUsers)
+                    setUserOnline();
                 }
             })
         }) // end of listening set-user event
