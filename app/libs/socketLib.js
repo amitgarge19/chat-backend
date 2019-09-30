@@ -60,6 +60,7 @@ let setServer = (server) => {
                                     socket.room = 'edChat'
                                     // joining chat-group room.
                                     socket.join(socket.room)
+                                    console.log(socket.room);
                                     socket.to(socket.room).broadcast.emit('online-user-list', result);
                                 }
                             })
