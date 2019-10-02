@@ -59,9 +59,8 @@ let setServer = (server) => {
                                     // setting room name
                                     socket.room = 'edChat'
                                     // joining chat-group room.
-                                    socket.join(socket.room)
-                                    console.log(socket.room);
-                                    socket.to(socket.room).broadcast.emit('online-user-list', result);
+                                    socket.join(socket.room)                                    
+                                    socket.to(socket.room).broadcast.emit('online-user-list', result);                                    
                                 }
                             })
                         }
@@ -107,7 +106,6 @@ let setServer = (server) => {
 
             // event to save chat.
             setTimeout(function () {
-
                 eventEmitter.emit('save-chat', data);
 
             }, 2000)
