@@ -93,6 +93,8 @@ let setServer = (server) => {
                     } else {
                         socket.leave(socket.room)
                         socket.to(socket.room).broadcast.emit('online-user-list', result);
+                        socket.emit('online-user-list',result);
+                        //myIo.emit('online-user-list', result);
                     }
                 })
             }
