@@ -4,9 +4,9 @@ const check = require('./checkLib.js');
 const redis = require('redis');
 
 let client = redis.createClient({
-    port: 12106,
-    host: 'redis-12106.c73.us-east-1-2.ec2.cloud.redislabs.com',
-    password: '8tRbJHVrwjuv7CRkZJMnf4lBDvrRmZZN'
+    port: 10750,
+    host: 'redis-10750.c14.us-east-1-2.ec2.cloud.redislabs.com',
+    password: 'jTHKbchdrr4zxxGIdcL8RbJjlJdoBMws'
 });
 
 client.on('connect', () => {
