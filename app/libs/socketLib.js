@@ -59,9 +59,9 @@ let setServer = (server) => {
                                     // setting room name
                                     socket.room = 'edChat'
                                     // joining chat-group room.
-                                    socket.join(socket.room)                                    
-                                    socket.to(socket.room).broadcast.emit('online-user-list', result);
-                                    socket.emit('online-user-list', result); 
+                                    socket.join(socket.room)
+                                    socket.to(socket.room).emit('online-user-list', result);
+                                    //socket.emit('online-user-list', result);
                                     //myIo.emit('online-user-list', result);                                   
                                 }
                             })
@@ -94,7 +94,7 @@ let setServer = (server) => {
                         console.log(err)
                     } else {
                         socket.leave(socket.room)
-                        socket.to(socket.room).broadcast.emit('online-user-list', result);                                                
+                        socket.to(socket.room).broadcast.emit('online-user-list', result);
                     }
                 })
             }
